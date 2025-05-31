@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genmind Labs - Expert Writing & Research Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0f4f8; /* Light blue-gray for a professional feel */
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 700;
+            margin-bottom: 1.5rem; /* 24px */
+            color: #1a202c; /* Dark gray */
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .cta-button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .testimonial-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0; /* Light gray border */
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-xl font-bold text-sky-700">GenMind Labs</a>
+                <div class="flex md:hidden">
+                    <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu" id="mobile-menu-button">
+                        <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center" id="mobile-menu">
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-1 text-sm text-gray-700 font-medium hover:text-sky-600 md:mx-4 md:my-0" href="#home">Home</a>
+                    <a class="my-1 text-sm text-gray-700 font-medium hover:text-sky-600 md:mx-4 md:my-0" href="#about">About</a>
+                    <a class="my-1 text-sm text-gray-700 font-medium hover:text-sky-600 md:mx-4 md:my-0" href="#services">Services</a>
+                    <a class="my-1 text-sm text-gray-700 font-medium hover:text-sky-600 md:mx-4 md:my-0" href="#why-us">Why Us</a>
+                    <a class="my-1 text-sm text-gray-700 font-medium hover:text-sky-600 md:mx-4 md:my-0" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-bg pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-sky-800 mb-6 leading-tight">
+                GenMind Labs
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
+                Unlocking Insights, Crafting Excellence: Your Partner in Premier Writing & Research.
+            </p>
+            <a href="#services" class="cta-button bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-8 rounded-lg text-lg shadow-lg">
+                Explore Our Services
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-sky-700">About GenMind Labs</h2>
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=GenMind+Labs+Team" alt="GenMind Labs Team" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                     </div>
+                <div class="md:w-1/2 text-lg text-gray-700 space-y-4">
+                    <p>
+                        GenMind Labs is a dedicated collective of experienced writers and researchers passionate about transforming complex information into clear, compelling, and impactful content. We believe that well-crafted words and meticulous research are the cornerstones of success in any field.
+                    </p>
+                    <p>
+                        Our mission is to provide top-tier writing and research solutions tailored to meet the unique needs of academics, businesses, and individuals. We strive for excellence, precision, and timely delivery in every project we undertake.
+                    </p>
+                    <p>
+                        At Genmind Labs, we're not just service providers; we're your partners in achieving your communication and knowledge-based goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-sky-700">Our Services</h2>
+            <p class="text-center text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                We offer a comprehensive suite of writing and research services designed to elevate your projects and deliver outstanding results.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-sky-600 mb-4">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Academic Writing</h3>
+                    <p class="text-gray-600">
+                        Expert assistance with essays, research papers, dissertations, theses, literature reviews, and more. We ensure adherence to academic standards and citation styles.
+                    </p>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-sky-600 mb-4">
+                        <i class="fas fa-flask fa-3x"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Research & Analysis</h3>
+                    <p class="text-gray-600">
+                        Comprehensive research services including data collection, qualitative and quantitative analysis, market research, and scientific research support.
+                    </p>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-sky-600 mb-4">
+                        <i class="fas fa-pen-nib fa-3x"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Content Creation</h3>
+                    <p class="text-gray-600">
+                        Engaging and SEO-friendly content for websites, blogs, articles, white papers, case studies, and marketing materials.
+                    </p>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-sky-600 mb-4">
+                        <i class="fas fa-edit fa-3x"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Editing & Proofreading</h3>
+                    <p class="text-gray-600">
+                        Meticulous editing and proofreading services to ensure clarity, coherence, grammatical accuracy, and professional polish for all your documents.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-sky-600 mb-4">
+                        <i class="fas fa-briefcase fa-3x"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Business Writing</h3>
+                    <p class="text-gray-600">
+                        Professional business plans, reports, proposals, presentations, and corporate communications tailored to your business needs.
+                    </p>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-sky-600 mb-4">
+                        <i class="fas fa-file-signature fa-3x"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Grant & Proposal Writing</h3>
+                    <p class="text-gray-600">
+                        Crafting compelling grant proposals and applications to help you secure funding for your projects and initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-sky-700">Why Choose GenMind Labs?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+                <div class="text-center p-6">
+                    <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-medal fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Expertise & Quality</h3>
+                    <p class="text-gray-600">Our team consists of seasoned professionals with diverse academic and industry backgrounds, ensuring high-quality, well-researched content.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-user-shield fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Confidentiality</h3>
+                    <p class="text-gray-600">We uphold the strictest confidentiality standards, ensuring your ideas and data are secure with us.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-clock fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Timely Delivery</h3>
+                    <p class="text-gray-600">We understand the importance of deadlines and are committed to delivering your projects on time, every time.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-cogs fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Customized Solutions</h3>
+                    <p class="text-gray-600">We tailor our services to meet your specific requirements, providing personalized support and attention to detail.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-headset fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Excellent Support</h3>
+                    <p class="text-gray-600">Our friendly team is always ready to assist you, providing clear communication and support throughout your project.</p>
+                </div>
+                 <div class="text-center p-6">
+                    <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-lightbulb fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Innovative Approach</h3>
+                    <p class="text-gray-600">We leverage the latest research methodologies and writing techniques to deliver insightful and impactful results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-sky-700">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"GenMind Labs delivered exceptional research for our project. Their attention to detail and insightful analysis were invaluable. Highly recommended!"</p>
+                    <p class="font-semibold text-gray-800">- Nikki Hailey, Academic Researcher</p>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"The team at GenMind Labs transformed our website content. It's now engaging, clear, and perfectly captures our brand voice. Thank you!"</p>
+                    <p class="font-semibold text-gray-800">- John Smith, CEO of Tech Solutions Inc.</p>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"I was struggling with my dissertation, and GenMind Labs provided the expert guidance and writing support I needed to succeed. Professional and reliable."</p>
+                    <p class="font-semibold text-gray-800">- Alex Johnson, PhD Candidate</p>
+                </div>
+            </div>
+             <p class="text-center text-md text-gray-500 mt-8">
+               
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-sky-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-white !mb-10">Get in Touch</h2>
+            <div class="max-w-3xl mx-auto bg-white text-gray-800 p-8 md:p-12 rounded-xl shadow-2xl">
+                <p class="text-lg text-center mb-8">
+                    Ready to start your next project or have questions? We'd love to hear from you!
+                </p>
+                <div class="md:flex md:justify-around text-center">
+                    <div class="mb-6 md:mb-0">
+                        <i class="fas fa-envelope fa-2x text-sky-600 mb-2"></i>
+                        <h3 class="text-xl font-semibold mb-1">Email Us</h3>
+                        <a href="mailto:genmindslab.xyz@gmail.com" class="text-sky-600 hover:text-sky-800 text-lg">genmindslab.xyz@gmail.com</a>
+                    </div>
+                    <div class="mb-6 md:mb-0">
+                        <i class="fas fa-phone-alt fa-2x text-sky-600 mb-2"></i>
+                        <h3 class="text-xl font-semibold mb-1">Call Us</h3>
+                        <a href="tel:+254739264889" class="text-sky-600 hover:text-sky-800 text-lg">+254 739 264889</a>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                     <p class="text-gray-600">You can also reach out to us to discuss your specific needs or to get a custom quote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="currentYear"></span> GenMind Labs. All Rights Reserved.</p>
+            <p class="text-sm mt-1">Designed with <i class="fas fa-heart text-sky-500"></i> by AI</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Simple image error handler for placeholder
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.onerror = function() {
+                    // You can set a default placeholder or log an error
+                    this.src = 'https://placehold.co/600x400/e0e0e0/757575?text=Image+Not+Found';
+                    console.warn(`Image failed to load: ${this.alt}`);
+                };
+            });
+        });
+    </script>
+
+</body>
+</html>
